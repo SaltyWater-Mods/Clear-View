@@ -1,0 +1,9 @@
+{
+  "type": "code",
+  "modid": "clearview",
+  "name": "ClearView",
+  "side" : "Client",
+  "description": "Makes blocks between you and the third person camera fade away.",
+  "version": "0.1.0",
+  "authors": [ "SaltyWater" ]
+}
