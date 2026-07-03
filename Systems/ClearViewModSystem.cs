@@ -1,4 +1,5 @@
 using ClearView.Commands;
+using ClearView.Compatibility;
 using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -25,6 +26,7 @@ namespace ClearView.Systems
 
             harmony = new Harmony("saltywater.clearview");
             harmony.PatchAll();
+            TrueThirdPersonCompat.Patch(harmony);
         }
 
         public override void Dispose()

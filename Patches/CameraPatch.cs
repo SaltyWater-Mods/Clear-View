@@ -83,7 +83,8 @@ namespace ClearView.Patches
             return selection != null;
         }
 
-        private static bool BlockMustUseVanillaCameraCollision(BlockPos pos, Block block, double playerBottomY, ClearViewState state)
+        // Now internal so ttp compat can call the same rule instead of having a copied version
+        internal static bool BlockMustUseVanillaCameraCollision(BlockPos pos, Block block, double playerBottomY, ClearViewState state)
         {
             // low blocks still use vanilla collision so the camera does not sit under terrain
             if (!FadeableBlock.BlocksCamera(block))
